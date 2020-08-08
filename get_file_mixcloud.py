@@ -3,7 +3,7 @@ import urllib.request
 import wget
 from subprocess import Popen
 
-webUrl  = urllib.request.urlopen('https://www.mixcloud.com/RARARADIO_EHV/')  
+webUrl  = urllib.request.urlopen('https://www.mixcloud.com/RARARADIO_EHV/',data=None)  
 text = webUrl.read()
 text = str(text)
 webUrl.close()
